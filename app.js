@@ -15,7 +15,7 @@ function getJokes (e) {
 
             if(response.type === 'success') {
                 response.value.forEach(function(joke) {
-                    output += `<li class="mb-2">${joke.joke}</li>`;
+                    output += `<li class="mb-2 list-group-item">${joke.joke}</li>`;
                 });
             } else {
                 output += '<li class="text-danger pt-3">Something went wrong</li>'
